@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="icon.ico">
+	<title>2048</title>
+</head>
+<body>
+	<div id="container">
+		<section id="header">
+			<h1>2048</h1>
+			<div id="bestscore">
+				<div>
+					<p>SCORE</p>
+					<p>0</p>
+				</div>
+				<div>
+					<p>BEST</p>
+					<p>0</p>
+				</div>
+			</div>
+			<div id="titlenewgame">
+				<p>Join the numbers and get to the <strong>2048 tile!</strong></p>
+				<button onclick="newgame()">New Game</button>
+			</div>
+		</section>
+		<section id="game">
+			<div id="background">
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+				<div class="backtiles"></div>
+			</div>
+			<div id="foreground"></div>
+		</section>
+		<section id="htpnote">
+			<p id="howtoplay"><strong>HOW TO PLAY:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong></p>
+			<hr>
+			<p id="note"><strong>NOTE:</strong> This is a project I decided to do inspired from <strong><a href="https://gabrielecirulli.github.io/2048/">Gabriele Cirulli.</a></strong> All the credits go to him.</p>
+			<hr>
+		</section>
+		<footer>
+			<p><strong>Made By:</strong> Aman Kumar</p>
+		</footer>
+		<div id="demo">Javascript output here!</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

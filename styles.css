@@ -1,0 +1,198 @@
+@font-face {
+	font-family: "Clear Sans";
+	src: url(clear-sans.regular.ttf);
+}
+@font-face {
+	font-family: "Clear Sans";
+	src: url(clear-sans.bold.ttf);
+	font-weight: bold;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: #776e65;
+	background-color: #f9f6f2;
+	min-width: 500px;
+	font-family: "Clear Sans";
+}
+p {
+	font-size: 1.125em;
+}
+a, a:hover {
+	color: #776e65;
+}
+#container {
+	width: 500px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+h1 {
+	font-size: 5em;
+	padding-top: 80px;
+	display: inline-block;
+}
+#bestscore {
+	padding-top: 88px;
+	float: right;
+	display: inline-block;
+	max-width: 310px;
+	margin-right: -1px;
+}
+#bestscore div{
+	display: inline-block;
+	background-color: #bbada0;
+	border-radius: 4px;
+}
+#bestscore div p {
+	color: white;
+	text-align: center;
+}
+#bestscore div p:first-child {
+	font-family: sans-serif;
+	font-size: 0.73em;
+	padding-top: 10px;
+}
+#bestscore div p:nth-child(2) {
+	font-weight: bold;
+	font-size: 1.57em;
+	padding: 0px 25px;
+	margin-top: -2px;
+}
+#titlenewgame *{
+	display: inline-block;
+}
+#titlenewgame p{
+	padding-top: 12px;
+}
+button {
+	margin-top: 4px;
+	float: right;
+	color: white;
+	background-color: #8f7a66;
+	border: none;
+	padding: 8px 20px;
+	font-weight: bold;
+	font-size: 1.125em;
+	border-radius: 4px;
+	font-family: "Clear Sans";
+	outline: none;
+}
+button:hover {
+	cursor: pointer;
+}
+#htpnote {
+	margin-top: 49px;
+}
+#htpnote p {
+	line-height: 1.7;
+}
+hr {
+	margin: 22px 0px 27px;
+	opacity: 0.3;
+}
+footer {
+	margin-bottom: 100px;
+}
+#game {
+	margin-top: 50px;
+	position: relative;
+	width: 500px;
+	height: 500px;
+}
+[id*="ground"] {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	border-radius: 6px;
+}
+#background {
+	background-color: #bbada0;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto auto auto;
+	grid-gap: 15px;
+	padding: 15px;
+}
+[class*="tiles"] {
+	border-radius: 4px;
+}
+.backtiles {
+	background-color: #ccbfb4;
+}
+.foretiles {
+	position: absolute;
+	height: 107px;
+	width: 107px;
+	margin: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	padding-bottom: 3px;
+	animation: birth 0.3s forwards;
+	transition: top 0.1s, left 0.1s;
+	color: white;
+}
+@keyframes birth {
+	from{transform: scale(0);opacity: 0;}
+	to{transform: scale(1);opacity: 1;}
+}
+.num2 {
+	background-color: #ede3d9;
+	font-size: 3.45em;
+	color: #776e65;
+}
+.num4 {
+	background-color: #ecdfc7;
+	font-size: 3.45em;
+	color: #776e65;
+}
+.num8 {
+	background-color: red;
+	font-size: 3.45em;
+}
+.num16 {
+	background-color: blue;
+	font-size: 3.45em;
+}
+.num32 {
+	background-color: green;
+	font-size: 3.45em;
+}
+.num64 {
+	background-color: yellow;
+	font-size: 3.45em;
+}
+.num128 {
+	background-color: purple;
+	font-size: 3.45em;
+}
+.num256 {
+	background-color: black;
+	font-size: 3.45em;
+}
+.num512 {
+	background-color: red;
+	font-size: 3.45em;
+}
+.num1024 {
+	background-color: red;
+	font-size: 3.45em;
+}
+.num2048 {
+	background-color: red;
+	font-size: 3.45em;
+}
+.numgt2048 {
+	background-color: red;
+	font-size: 3.45em;
+}
+
+#demo {
+	position: fixed;
+	top: 100px;
+	left: 100px;
+}
